@@ -1,0 +1,75 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+/frontend/build
+/frontend/dist
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.env
+.venv
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Development
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# SQL setup scripts (can be deleted before deployment)
+frontend/supabase_views.sql
+frontend/supabase_view1.sql
+frontend/supabase_view2.sql
+frontend/supabase_function.sql
+frontend/supabase_final.sql
+frontend/src/sql/supabase_functions.sql
+frontend/src/sql/direct_api_key_update.sql
+frontend/src/sql/manual_api_key_insert.sql
+frontend/src/sql/fix_api_key_storage.sql
+frontend/src/sql/direct_api_key_insert.sql
+frontend/src/sql/api_keys_rls.sql
+frontend/src/sql/create_get_user_api_keys.sql
+
+# Development notes
+mind map plan.txt

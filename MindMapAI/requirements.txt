@@ -1,0 +1,37 @@
+# ---- Frontend Dependencies ----
+# To install using: npm install (in frontend directory)
+# Main dependencies:
+# - react: ^19.1.0
+# - react-dom: ^19.1.0
+# - react-router-dom: ^6.20.0
+# - mermaid: ^9.4.3 (Mind map visualization)
+# - axios: ^1.9.0 (API communication)
+# - html2canvas: ^1.4.1 (For PDF export)
+# - jspdf: ^3.0.1 (PDF generation)
+# - @supabase/supabase-js (Database connection)
+
+# Dev dependencies:
+# - concurrently: ^9.1.2 (Run frontend and backend together)
+# - cross-env: ^7.0.3
+# - react-scripts: 5.0.1
+
+# ---- Backend Dependencies ----
+# To install using: pip install -r requirements.txt (in backend directory)
+
+# Core framework
+fastapi>=0.103.0
+uvicorn>=0.23.0
+
+# HTTP and API
+httpx>=0.25.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# API Integration
+# For OpenAI/Claude/Gemini API integration
+openai>=1.0.0
+anthropic>=0.5.0
+google-generativeai>=0.3.0
+
+# For searching and processing
+beautifulsoup4>=4.12.0
