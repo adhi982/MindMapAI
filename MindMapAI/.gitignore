@@ -73,3 +73,36 @@ frontend/src/sql/create_get_user_api_keys.sql
 
 # Development notes
 mind map plan.txt
+
+# --- Additional sensitive files and patterns (auto-audited) ---
+# Environment and secrets
+.env
+.env.*
+*.env
+*.env.*
+
+# Python scripts with hardcoded secrets (audit regularly)
+MindMapAI/backend/create_env.py
+
+# Supabase/other API key JS files (move keys to env if possible)
+MindMapAI/frontend/src/supabase.js
+
+# SQL scripts for API key management (if exporting data, ignore dumps)
+MindMapAI/frontend/sql/
+MindMapAI/frontend/src/sql/
+
+# SSL certificates and private keys (if any are added)
+*.pem
+*.crt
+*.key
+
+# Backup and temp files
+*.bak
+*.tmp
+
+# Catch-all for secrets/credentials (audit regularly)
+*secret*
+*key*
+*token*
+*credential*
+*password*
