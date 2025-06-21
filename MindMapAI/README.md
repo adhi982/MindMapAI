@@ -1,6 +1,6 @@
 # AI-Powered Mind Map Generator
 
-![AI Mind Map Generator](https://via.placeholder.com/800x400?text=AI+Mind+Map+Generator)
+![AI Mind Map Generator](https://mindmapai-1-89h7.onrender.com)
 
 An advanced web application that uses AI to generate structured, visually appealing mind maps from any topic or text input. The application utilizes multiple AI providers with support for OpenAI, Anthropic, Gemini, and Cohere models, and features secure API key management and user authentication.
 
