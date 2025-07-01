@@ -16,7 +16,7 @@ An advanced web application that uses AI to generate structured, visually appeal
 
 ## 🚀 Live Website
 
- [MindMapAI][https://mindmapai-ns7n.onrender.com/]
+ MindMapAI : [https://mindmapai-ns7n.onrender.com/]
 
 ## 🛠️ Tech Stack
 
