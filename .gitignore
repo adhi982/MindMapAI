@@ -2,7 +2,7 @@
 
 # dependencies
 node_modules/
-/.pnp
+/pnp
 .pnp.js
 
 # testing
@@ -105,4 +105,4 @@ MindMapAI/frontend/src/sql/
 *key*
 *token*
 *credential*
-*password*
+*password* 

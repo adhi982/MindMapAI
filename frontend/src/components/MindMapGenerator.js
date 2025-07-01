@@ -293,6 +293,7 @@ const MindMapGenerator = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form submitted, sending POST to /generate_map");
     
     // Check if user has reached usage limits
     const generationType = researchMode ? 'research' : 'normal';
@@ -340,7 +341,12 @@ const MindMapGenerator = () => {
         console.log("Using MindMapAI default API for generation");
       }
       
-      const response = await axios.post('http://localhost:8000/generate_map', requestPayload);
+      const apiUrl = process.env.REACT_APP_API_URL
+        ? `${process.env.REACT_APP_API_URL}/generate_map`
+        : 'https://mindmapai-lou5.onrender.com/generate_map';
+      const response = await axios.post(apiUrl, requestPayload, {
+        headers: { 'Content-Type': 'application/json' }
+      });
       
       console.log("API response:", response.data);
       setMermaidCode(response.data.mermaid);
